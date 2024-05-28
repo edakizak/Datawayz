@@ -1,11 +1,12 @@
 import Link from "next/link";
+import styles from "./Header.module.css";
 
 const Header = () => (
-  <header>
-    <div className="logo">
+  <header className={styles.header}>
+    <div className={styles.logo}>
       <img src="/images/Datawayz-logo1.png" alt="Datawayz Logo" />
     </div>
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
           <Link href="/demos">Demos</Link>
@@ -21,7 +22,7 @@ const Header = () => (
         </li>
       </ul>
     </nav>
-    <button className="explore-more">Explore more</button>
+    <button className={styles.exploreMore}>Explore more</button>
   </header>
 );
 
