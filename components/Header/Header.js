@@ -5,7 +5,12 @@ import Image from "next/image";
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.logo}>
-      <Image src="/images/Datawayz-logo1.png" alt="Datawayz Logo" />
+      <Image
+        src="/images/Datawayz-logo1.png"
+        alt="Datawayz Logo"
+        width={50}
+        height={50}
+      />
     </div>
     <nav className={styles.nav}>
       <ul>
