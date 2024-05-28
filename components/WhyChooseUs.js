@@ -3,7 +3,7 @@ const WhyChooseUs = () => (
     <h2>Why Choose Us?</h2>
     <p>
       Transform your business with our proven data-driven strategies and
-      optimization solutions. Here's why we're the best choice for your
+      optimization solutions. Here&apos;s why we&apos; the best choice for your
       business:
     </p>
     <ul>
