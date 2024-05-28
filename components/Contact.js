@@ -2,8 +2,8 @@ const Contact = () => (
   <section className="contact">
     <h2>Contact Us</h2>
     <p>
-      We're here to help you with any questions or inquiries. Reach out to us
-      and we'll respond as soon as possible.
+      We&apos;re here to help you with any questions or inquiries. Reach out to
+      us and we&apos;ll respond as soon as possible.
     </p>
     <form>
       <div className="form-group">

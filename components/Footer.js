@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const Footer = () => (
   <footer>
     <div className="footer-logo">
-      <img src="/images/logo.png" alt="Datawayz Logo" />
+      <Image src="/images/logo.png" alt="Datawayz Logo" />
     </div>
     <div className="footer-links">
       <div>

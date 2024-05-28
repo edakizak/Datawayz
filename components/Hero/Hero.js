@@ -1,10 +1,11 @@
 import styles from "./Hero.module.css";
+import Image from "next/image";
 
 const Hero = () => (
   <section className={styles.hero}>
     <div className={styles.heroContent}>
       <div className={styles.logo}>
-        <img src="/images/Datawayz-logo2.png" alt="Datawayz Logo" />
+        <Image src="/images/Datawayz-logo2.png" alt="Datawayz Logo" />
       </div>
       <div className={styles.textContent}>
         <h1 className={styles.title}>
