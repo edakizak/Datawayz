@@ -1,18 +1,36 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../../public/font/Montserrat/static/Montserrat-Regular.ttf);
+  font-family: "Montserrat-Light";
+  src: url(../../public//font//Montserrat//static//Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../../public//font//Montserrat//static//Montserrat-Medium.ttf);
+}
+
 .whyChooseUs {
-  padding: 60px 20px;
-  text-align: center;
+  padding-top: 120px;
+  padding: 60px 50px;
+  background-color: #ffffff;
 }
 
 .whyChooseUs h2 {
   font-size: 2rem;
   color: #333333;
   margin-bottom: 20px;
+  margin-top: 50px;
+  font-family: "Montserrat-Regular";
+  text-align: center;
 }
 
 .whyChooseUs p {
   font-size: 1.25rem;
   color: #666666;
   margin-bottom: 40px;
+  font-family: "Montserrat-Medium";
+  text-align: center;
 }
 
 .content {
@@ -56,19 +74,54 @@
   font-size: 1.25rem;
   color: #333333;
   margin-bottom: 10px;
+  font-family: "Montserrat-Medium";
 }
 
 .listItem p {
   font-size: 1rem;
   color: #666666;
+  font-family: "Montserrat-Light";
+  text-align: start;
 }
 
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .imageContainer {
     margin-bottom: 20px;
+  }
+
+  .listItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .number {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .listItem h3,
+  .listItem p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .whyChooseUs h2 {
+    font-size: 1.5rem;
+  }
+
+  .listItem h3 {
+    font-size: 1.25rem;
+  }
+
+  .listItem p {
+    font-size: 0.875rem;
   }
 }

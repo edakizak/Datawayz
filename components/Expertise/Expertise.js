@@ -10,7 +10,7 @@ const Expertise = forwardRef((props, ref) => (
       comprehensive suite of services designed to optimize your operations.
     </p>
     <div className={styles.cards}>
-      <div className={styles.cards}>
+      <div className={styles.card}>
         <h3>Operation</h3>
         <p>
           Streamline your business processes with our innovative operational

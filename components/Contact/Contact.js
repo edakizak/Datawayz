@@ -3,72 +3,36 @@ import styles from "./Contact.module.css";
 
 const Contact = forwardRef((props, ref) => (
   <section ref={ref} id="contact" className={styles.contact}>
-    <h2>Contact Us</h2>
+    <h2>Contact Us </h2>
     <p>
       We&apos;re here to help you with any questions or inquiries. Reach out to
       us and we&apos;ll respond as soon as possible.
     </p>
-    <form className={styles.form}>
-      <div className={styles.formGroup}>
-        <label htmlFor="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="email">Your Email</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="phone">Your Phone Number</label>
-        <input type="tel" id="phone" name="phone" />
-      </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="message">Your Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit" className={styles.submitButton}>
-        Send Message
-      </button>
-    </form>
     <div className={styles.contactInfo}>
-      <p>
-        <strong>Address:</strong> 123 Data Street, Tech City, TX 75001
+      {/* <h2 className={styles.title}>DATAWAYZ</h2> */}
+      <p className={styles.owner}>Inh. Ömer-Faruk Cat</p>
+      <address className={styles.address}>
+        Sr.-Linolda-Weg 9<br />
+        97506 Grafenrheinfeld
+      </address>
+      <p className={styles.contactDetails}>
+        <span className={styles.label}>mobile:</span> +49 170 2203050
+        <br />
+        <span className={styles.label}>mail:</span>{" "}
+        <a href="mailto:omer.cat@datawayz.com" className={styles.link}>
+          omer.cat@datawayz.com
+        </a>
+        <br />
+        <span className={styles.label}>web:</span>{" "}
+        <a
+          href="https://www.datawayz.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
+          www.datawayz.com
+        </a>
       </p>
-      <p>
-        <strong>Phone:</strong> +1 (123) 456-7890
-      </p>
-      <p>
-        <strong>Email:</strong> contact@datawayz.com
-      </p>
-      <div className={styles.socialMedia}>
-        <a
-          href="https://twitter.com/datawayz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Twitter
-        </a>
-        <a
-          href="https://facebook.com/datawayz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Facebook
-        </a>
-        <a
-          href="https://instagram.com/datawayz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-        <a
-          href="https://linkedin.com/company/datawayz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-      </div>
     </div>
   </section>
 ));
