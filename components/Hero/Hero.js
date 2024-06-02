@@ -16,12 +16,8 @@ const Hero = () => (
         <h1 className={styles.title}>
           Revolutionize Your Business with Data-Driven Solutions
         </h1>
-        {/* <p className={styles.subtitle}>
-          Unlock the full potential of your business with our cutting-edge data
-          analytics and optimization services. Drive efficiency, enhance
-          decision-making, and achieve unprecedented growth.
-        </p> */}
-        <button className={styles.exploreMore}>Explore more</button>
+
+        {/* <button className={styles.exploreMore}>Explore more</button> */}
       </div>
     </div>
     <div className={styles.heroImage}>

@@ -23,10 +23,11 @@ export default function Home() {
       whyChooseUsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <>
       <Header scrollToContact={scrollToSection} />
-      <main>
+      <main style={{ marginTop: "80px" }}>
         <Hero />
         <Expertise ref={expertiseRef} />
         <WhyChooseUs ref={whyChooseUsRef} />
