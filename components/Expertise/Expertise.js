@@ -47,4 +47,6 @@ const Expertise = forwardRef((props, ref) => (
   </section>
 ));
 
+Expertise.displayName = "Expertise";
+
 export default Expertise;

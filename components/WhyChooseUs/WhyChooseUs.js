@@ -52,4 +52,6 @@ const WhyChooseUs = forwardRef((props, ref) => (
   </section>
 ));
 
+WhyChooseUs.displayName = "WhyChooseUs";
+
 export default WhyChooseUs;
