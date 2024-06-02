@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./Expertise.module.css";
 
-const Expertise = () => (
-  <section className={styles.expertise}>
+const Expertise = forwardRef((props, ref) => (
+  <section ref={ref} id="ourExpertise" className={styles.expertise}>
     <h2>Our Expertise</h2>
     <p>
       Empowering your business with tailored solutions to meet your unique
@@ -10,7 +10,7 @@ const Expertise = () => (
       comprehensive suite of services designed to optimize your operations.
     </p>
     <div className={styles.cards}>
-      <div className={`${styles.card} ${styles.active}`}>
+      <div className={styles.cards}>
         <h3>Operation</h3>
         <p>
           Streamline your business processes with our innovative operational
@@ -45,6 +45,6 @@ const Expertise = () => (
       </div>
     </div>
   </section>
-);
+));
 
 export default Expertise;
