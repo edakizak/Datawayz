@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./Contact.module.css";
 
-const Contact = () => (
-  <section className={styles.contact}>
+const Contact = forwardRef((props, ref) => (
+  <section ref={ref} id="contact" className={styles.contact}>
     <h2>Contact Us</h2>
     <p>
       We&apos;re here to help you with any questions or inquiries. Reach out to
@@ -39,7 +39,7 @@ const Contact = () => (
       <p>
         <strong>Email:</strong> contact@datawayz.com
       </p>
-      {/* <div className={styles.socialMedia}>
+      <div className={styles.socialMedia}>
         <a
           href="https://twitter.com/datawayz"
           target="_blank"
@@ -68,9 +68,11 @@ const Contact = () => (
         >
           LinkedIn
         </a>
-      </div> */}
+      </div>
     </div>
   </section>
-);
+));
+
+Contact.displayName = "Contact";
 
 export default Contact;

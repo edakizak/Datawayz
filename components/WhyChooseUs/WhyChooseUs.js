@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Image from "next/image";
 import styles from "./Whychooseus.module.css";
 
-const WhyChooseUs = () => (
-  <section className={styles.whyChooseUs}>
+const WhyChooseUs = forwardRef((props, ref) => (
+  <section ref={ref} id="whyChooseUs" className={styles.whyChooseUs}>
     <h2>Why Choose Us?</h2>
     <p>
       Transform your business with our proven data-driven strategies and
@@ -50,6 +50,8 @@ const WhyChooseUs = () => (
       </div>
     </div>
   </section>
-);
+));
+
+WhyChooseUs.displayName = "WhyChooseUs";
 
 export default WhyChooseUs;

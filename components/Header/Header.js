@@ -1,8 +1,8 @@
-import Link from "next/link";
+// import Link from "next/link";
 import styles from "./Header.module.css";
 import Image from "next/image";
 
-const Header = () => (
+const Header = ({ scrollToSection }) => (
   <header className={styles.header}>
     <div className={styles.logo}>
       <Image
@@ -15,20 +15,29 @@ const Header = () => (
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href="/demos">Demos</Link>
+          <a
+            href="#ourExpertise"
+            onClick={(e) => scrollToSection(e, "ourExpertise")}
+          >
+            Our Expertise
+          </a>
         </li>
         <li>
-          <Link href="/pages">Pages</Link>
+          <a
+            href="#whyChooseUs"
+            onClick={(e) => scrollToSection(e, "whyChooseUs")}
+          >
+            Why Choose Us?
+          </a>
         </li>
         <li>
-          <Link href="/support">Support</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
+          <a href="#contact" onClick={(e) => scrollToSection(e, "contact")}>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
-    <button className={styles.exploreMore}>Explore more</button>
+    {/* <button className={styles.exploreMore}>Explore more</button> */}
   </header>
 );
 
