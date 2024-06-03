@@ -1,86 +1,90 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../../public/font/Montserrat/static/Montserrat-Regular.ttf);
+  font-family: "Montserrat-Light";
+  src: url(../../public//font//Montserrat//static//Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../../public//font//Montserrat//static//Montserrat-Medium.ttf);
+}
+
 .footer {
-  background-color: #a9aaad;
-  color: #000000;
+  background-color: #2a2e35;
+  color: #ffffff;
   padding: 40px 20px;
-  text-align: center;
+  font-family: "Montserrat-Light";
 }
 
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo img {
-  height: 50px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+.companyInfo,
+.links,
+.legal {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
 }
 
-.linkGroup {
-  text-align: left;
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Montserrat-Light";
 }
 
-.linkGroup h4 {
+.links h3,
+.legal h3 {
   font-size: 1.25rem;
   margin-bottom: 10px;
-  color: #ffffff;
 }
 
-.linkGroup ul {
+.links ul,
+.legal ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.linkGroup ul li {
+.links li,
+.legal li {
   margin-bottom: 10px;
 }
 
-.linkGroup ul li a {
-  color: #cccccc;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.linkGroup ul li a:hover {
-  color: #ffffff;
-}
-
-.socialMedia {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.socialMedia a {
+.link {
   color: #0070f3;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.socialMedia a:hover {
-  color: #005bb5;
+.link:hover {
+  text-decoration: underline;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .links {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .linkGroup {
-    text-align: center;
+  .companyInfo,
+  .links,
+  .legal {
+    margin-bottom: 20px;
   }
 }

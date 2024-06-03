@@ -14,86 +14,72 @@ const Footer = () => (
           height={50}
         />
       </div>
+      <div className={styles.companyInfo}>
+        <h2 className={styles.title}>DATAWAYZ</h2>
+        <p>Inh. Ömer-Faruk Cat</p>
+        <p>Sr.-Linolda-Weg 9, 97506 Grafenrheinfeld</p>
+        <p>mobile: +49 170 2203050</p>
+        <p>
+          mail:{" "}
+          <a href="mailto:omer.cat@datawayz.com" className={styles.link}>
+            omer.cat@datawayz.com
+          </a>
+        </p>
+        <p>
+          web:{" "}
+          <a
+            href="https://www.datawayz.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            www.datawayz.com
+          </a>
+        </p>
+      </div>
       <div className={styles.links}>
-        <div className={styles.linkGroup}>
-          <h4>Company</h4>
-          <ul>
-            <li>
-              <Link href="/about-us">About Us</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link href="/careers">Careers</Link>
-            </li>
-            <li>
-              <Link href="/press">Press</Link>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.linkGroup}>
-          <h4>Product</h4>
-          <ul>
-            <li>
-              <Link href="/features">Features</Link>
-            </li>
-            <li>
-              <Link href="/pricing">Pricing</Link>
-            </li>
-            <li>
-              <Link href="/news">News</Link>
-            </li>
-            <li>
-              <Link href="/support">Support</Link>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.linkGroup}>
-          <h4>Legal</h4>
-          <ul>
-            <li>
-              <Link href="/privacy-policy">Privacy Policy</Link>
-            </li>
-            <li>
-              <Link href="/terms-and-conditions">Terms & Conditions</Link>
-            </li>
-            <li>
-              <Link href="/imprint">Impressum</Link>
-            </li>
-          </ul>
-        </div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li>
+            <a href="#ourExpertise" className={styles.link}>
+              Our Expertise
+            </a>
+          </li>
+          <li>
+            <a href="#whyChooseUs" className={styles.link}>
+              Why Choose Us?
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className={styles.link}>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.legal}>
+        <h3>Legal</h3>
+        <ul>
+          <li>
+            <a href="/privacy-policy" className={styles.link}>
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="/terms-conditions" className={styles.link}>
+              Terms & Conditions
+            </a>
+          </li>
+          <li>
+            <a href="/impressum" className={styles.link}>
+              Impressum
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div className={styles.socialMedia}>
-      <a
-        href="https://twitter.com/datawayz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Twitter
-      </a>
-      <a
-        href="https://facebook.com/datawayz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Facebook
-      </a>
-      <a
-        href="https://instagram.com/datawayz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram
-      </a>
-      <a
-        href="https://linkedin.com/company/datawayz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>
+    <div className={styles.footerBottom}>
+      <p>&copy; 2024 DATAWAYZ. All rights reserved.</p>
     </div>
   </footer>
 );
