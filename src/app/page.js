@@ -6,6 +6,7 @@ import Expertise from "../../components/Expertise/Expertise";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
+import CookieBanner from "../../components/CookieBanner/CookieBanner";
 import React, { useRef } from "react";
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
         <Contact ref={contactRef} />
       </main>
       <Footer />
+      <CookieBanner />
     </>
   );
 }
